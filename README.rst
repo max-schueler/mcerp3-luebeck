@@ -75,11 +75,11 @@ Effort has been made to ensure ``mcerp3`` is easy to install.
 #. From the command-line, do one of the following:
    
    
+   conda does not work yet. 
    a. Install the `conda package`_::
    
        $ conda install mcerp3 -c freemapa
-    
-   conda does not work yet.
+   
    
    b. Install the `PyPI package`_::
 

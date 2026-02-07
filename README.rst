@@ -26,6 +26,8 @@ as you desire!
 What's New In This Release
 ==========================
 
+- Maintained Python 3.12+ fork of [mcerp](https://github.com/tisimst/mcerp) by Abraham Lee.
+
 - this is a Python 3 release of the mcerp package by Abraham Lee
 
 - available via ``conda`` or ``pip``
@@ -72,13 +74,16 @@ Effort has been made to ensure ``mcerp3`` is easy to install.
 
 #. From the command-line, do one of the following:
    
+   
    a. Install the `conda package`_::
    
        $ conda install mcerp3 -c freemapa
     
+   conda does not work yet.
+   
    b. Install the `PyPI package`_::
 
-       $ pip install mcerp3
+       $ pip install mcerp3-luebeck
 
 The `source code`_ is also freely available, in case you would like to
 incorporate it directly into your project. However, when possible, it is

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcerp3-luebeck"
+version = "1.0.4"
+authors = [{name = "Maximilian Schüler", email = "maximilian.schueler@th-luebeck.de"}]
+description = "Maintained Python 3.12+ fork of mcerp3"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.12",
+    "matplotlib"
+]
+license = {file = "LICENSE"}
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/max-schueler/mcerp3-luebeck"
+Repository = "https://github.com/max-schueler/mcerp3-luebeck"

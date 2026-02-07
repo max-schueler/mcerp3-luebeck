@@ -14,7 +14,7 @@ import scipy.stats as ss
 import matplotlib.pyplot as plt
 from .lhd import lhd
 
-__version__ = "1.0.3-dev"
+__version__ = "1.0.4"
 
 __author__ = 'Abraham Lee'
 

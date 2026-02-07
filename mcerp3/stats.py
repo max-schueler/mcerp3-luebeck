@@ -44,6 +44,9 @@ def wrap(func):
     wrappedfunc.__doc__ = func.__doc__
     
     return wrappedfunc
+
+
+
     
 describe = wrap(ss.describe)
 gmean = wrap(ss.gmean)
@@ -92,8 +95,10 @@ bartlett = wrap(ss.bartlett)
 levene = wrap(ss.levene)
 shapiro = wrap(ss.shapiro)
 anderson = wrap(ss.anderson)
-binom_test = wrap(ss.binom_test)
 fligner = wrap(ss.fligner)
 mood = wrap(ss.mood)
 
+def _binom_test(*args, **kwargs):
+    return ss.binomtest(*args, **kwargs).pvalue
 
+binom_test = wrap(_binom_test)

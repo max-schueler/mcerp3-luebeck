@@ -9,13 +9,12 @@ Copyright: 2013 - 2014
 Updates to Python 3 by Paul Freeman, 2018
 """
 
-import pkg_resources
 import numpy as np
 import scipy.stats as ss
 import matplotlib.pyplot as plt
 from .lhd import lhd
 
-__version__ = pkg_resources.require('mcerp3')[0].version
+__version__ = "1.0.3-dev"
 
 __author__ = 'Abraham Lee'
 
@@ -87,7 +86,7 @@ class UncertainFunction(object):
         defined as::
 
                     ________
-            std = \/variance
+            std = /variance
 
         """
         return self.var**0.5
@@ -99,7 +98,7 @@ class UncertainFunction(object):
         defined as::
 
               _____     m3
-            \/beta1 = ------
+            /beta1 = ------
                       std**3
 
         where m3 is the third central moment and std is the standard deviation

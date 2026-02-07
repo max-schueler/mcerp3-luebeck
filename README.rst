@@ -128,8 +128,8 @@ the original author, `Abraham Lee`_.
 .. _source code: https://github.com/paul-freeman/mcerp
 .. _Abraham Lee: mailto:tisimst@gmail.com
 .. _Paul Freeman: mailto:paul.freeman.cs@gmail.com
-.. _package documentation: http://pythonhosted.org/mcerp3
-.. _GitHub: http://github.com/paul-freeman/mcerp
-.. _GitHub issues: http://github.com/paul-freeman/mcerp/issues
+.. _package documentation: https://pypi.org/project/mcerp3-luebeck/
+.. _GitHub: https://github.com/max-schueler/mcerp3-luebeck
+.. _GitHub issues: https://github.com/max-schueler/mcerp3-luebeck/issues
 .. _conda package: https://anaconda.org/freemapa/mcerp3
-.. _PyPI package: https://pypi.org/project/mcerp3/
+.. _PyPI package: https://pypi.org/project/mcerp3-luebeck/

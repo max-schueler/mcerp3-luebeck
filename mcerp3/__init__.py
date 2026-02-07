@@ -15,7 +15,11 @@ import scipy.stats as ss
 import matplotlib.pyplot as plt
 from .lhd import lhd
 
-__version__ = pkg_resources.require('mcerp3')[0].version
+try:
+    from importlib.metadata import version
+    __version__ = version(__name__)
+except ImportError:
+    __version__ = "1.0.3-dev"
 
 __author__ = 'Abraham Lee'
 

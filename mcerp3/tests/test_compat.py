@@ -21,3 +21,19 @@ def test_version():
     """Test __version__ exists."""
     assert hasattr(mcerp3, '__version__')
     assert isinstance(mcerp3.__version__, str)
+
+
+def test_lhd_basic():
+    """Test lhd with docstring example."""
+    d0 = ss.uniform(loc=-1, scale=2)
+    pts = mcerp3.lhd(dist=d0, size=5)
+    assert pts.shape == (5, 1)
+    assert np.all(pts >= -1) and np.all(pts <= 1)
+    assert np.all(np.isfinite(pts))
+
+def test_lhd_multiple_dims():
+    """Test single dist → multiple vars."""
+    d1 = ss.norm(loc=0, scale=1)
+    pts = mcerp3.lhd(dist=d1, size=7, dims=3)
+    assert pts.shape == (7, 3)
+    assert np.all(np.isfinite(pts))

@@ -191,7 +191,7 @@ def lhd(dist=None,size=None,dims=1,form='randomized',iterations=100,
 
         return data
     
-    if form is 'randomized':
+    if form == 'randomized':
         if hasattr(dist,'__getitem__'): # if multiple distributions were input
             nvars = len(dist)
             x = np.vstack((np.zeros(nvars),np.ones(nvars)))
@@ -208,7 +208,7 @@ def lhd(dist=None,size=None,dims=1,form='randomized',iterations=100,
             for i in range(nvars):
                 dist_data[:,i] = dist.ppf(unif_data[:,i])
         
-    elif form is 'spacefilling':
+    elif form == 'spacefilling':
         def euclid_distance(arr):
             n = arr.shape[0]
             ans = 0.0
@@ -248,7 +248,7 @@ def lhd(dist=None,size=None,dims=1,form='randomized',iterations=100,
                 dist_data[:,i] = dist.ppf(unif_data[:,i])
                 
 
-    elif form is 'orthogonal':
+    elif form == 'orthogonal':
         raise NotImplementedError("Sorry. The orthogonal space-filling algorithm hasn't been implemented yet.")
     else:
         raise ValueError('Invalid "form" value: %s'%(form))
